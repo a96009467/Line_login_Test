@@ -14,11 +14,11 @@
         <script>
             $('#lineLoginBtn').on('click', function(e) {
                 let client_id = '1653775515';
-                let redirect_uri = 'https://a96009467.github.io/works';
+ 
                 let link = 'https://access.line.me/oauth2/v2.1/authorize?';
                 link += 'response_type=code';
                 link += '&client_id=' + client_id;
-                link += '&redirect_uri=' + redirect_uri;
+                link += '&redirect_uri=https://a96009467.github.io/works';
                 link += '&state=login';
                 link += '&scope=openid%20profile%20email';
                 window.location.href = link;
